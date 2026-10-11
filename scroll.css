@@ -1,0 +1,73 @@
+/* Scroll is native; these layers follow its position without changing layout. */
+.reading-progress{position:fixed;inset:0 0 auto;z-index:70;height:3px;background:#11111108;pointer-events:none;contain:strict}
+.reading-progress-fill{display:block;width:100%;height:100%;background:var(--ink);transform:scaleX(var(--reading-progress,0));transform-origin:left;box-shadow:0 0 12px rgb(var(--accent-rgb) / .38)}
+.scroll-scene{--scene-progress:0;--scene-shift:0px;--scene-turn:0deg}
+.hero.scroll-scene .hero-title-wrap{translate:0 var(--hero-title-drift,0px);rotate:var(--hero-title-turn,0deg);scale:var(--hero-title-scale,1);transform-origin:20% 75%}
+.hero.scroll-scene .hero-art{translate:0 var(--hero-art-drift,0px);rotate:var(--hero-art-turn,0deg);scale:var(--hero-art-scale,1);transform-origin:65% 40%}
+.hero.scroll-scene .hero-eyebrow{translate:var(--hero-eyebrow-drift,0px) 0}
+.hero.scroll-scene .hero-index{translate:0 var(--hero-index-drift,0px)}
+.hero.scroll-scene .glass-wave{rotate:var(--hero-glass-turn,0deg)}
+.scroll-scene .section-top{position:relative}
+.scroll-section-line{position:absolute;left:0;right:0;top:-2px;height:3px;background:var(--accent);transform:scaleX(var(--line-progress,0));transform-origin:left;pointer-events:none;z-index:1}
+.contact .scroll-section-line{background:#111}
+.project-visual.scroll-layer{rotate:var(--card-turn,0deg);transform-origin:50% 60%}
+.project-visual.scroll-layer>img{translate:0 var(--card-image-drift,0px);scale:var(--card-image-scale,1)}
+.project-visual.scroll-layer>.visual-caption,.project-visual.scroll-layer>.letter-title{translate:0 var(--card-copy-drift,0px)}
+.scroll-card-meter{position:absolute;inset:0 0 auto;height:3px;z-index:6;background:var(--ink);transform:scaleX(var(--card-progress,0));transform-origin:left;pointer-events:none;opacity:.65}
+.scroll-layer .visual-bottom{translate:var(--card-label-drift,0px) 0}
+.works.scroll-scene .asterisk{rotate:var(--works-star-turn,0deg);translate:0 var(--works-star-drift,0px)}
+.showreel-player.scroll-layer{--reel-progress:0}
+.scroll-reel-edge{position:absolute;inset:0;z-index:5;pointer-events:none;box-shadow:inset 0 0 0 var(--reel-edge-width,0px) rgb(var(--accent-rgb) / .75)}
+.research.scroll-scene #research-title{translate:var(--research-title-drift,0px) 0}
+.research-entry.scroll-layer,.research-card.scroll-layer{position:relative;translate:0 var(--entry-drift,0px)}
+.scroll-entry-meter{position:absolute;left:0;right:0;top:-1px;height:3px;z-index:3;background:var(--ink);transform:scaleX(var(--entry-progress,0));transform-origin:left;pointer-events:none}
+.research.scroll-scene .research-heading-mark{translate:0 var(--research-art-drift,0px);rotate:var(--research-art-turn,0deg)}
+.research-card.scroll-layer .research-paths-art>svg{translate:var(--entry-graphic-x,0px) var(--entry-graphic-y,0px);scale:1.08}
+.research-card.scroll-layer .research-art-label{translate:0 var(--entry-label-drift,0px)}
+.research-card.scroll-layer .research-path-choice{scale:var(--entry-choice-scale,1);transform-box:fill-box;transform-origin:center}
+.research-card.scroll-layer .research-letter-frame{translate:0 var(--entry-graphic-y,0px);rotate:var(--entry-frame-turn,0deg)}
+.research-card.scroll-layer .research-envelope{translate:var(--entry-envelope-x,0px) var(--entry-envelope-y,0px);rotate:var(--entry-envelope-turn,0deg)}
+.studio.scroll-scene .studio-scribble{translate:var(--studio-arrow-x,0px) var(--studio-arrow-y,0px);rotate:var(--studio-arrow-turn,0deg)}
+.studio.scroll-scene .studio-weave{translate:0 var(--studio-weave-drift,0px);rotate:var(--studio-weave-turn,0deg)}
+.studio.scroll-scene .profile-star{rotate:var(--studio-star-turn,0deg);scale:var(--studio-star-scale,1)}
+.contact.scroll-scene .contact-orbit{translate:var(--contact-orbit-x,0px) var(--contact-orbit-y,0px);rotate:var(--contact-orbit-turn,0deg);scale:var(--contact-orbit-scale,1)}
+.contact.scroll-scene .contact-heading h2>span:not(.contact-period){display:inline-block;translate:var(--contact-word-drift,0px) 0}
+.contact.scroll-scene .contact-period{display:inline-block;translate:0 var(--contact-dot-drift,0px)}
+/* All transforms are independent from reveal, hover and pointer tilt. */
+body[data-motion="off"] .reading-progress{display:none}
+body[data-motion="off"] .scroll-layer,
+body[data-motion="off"] .scroll-layer>img,
+body[data-motion="off"] .scroll-layer>.visual-caption,
+body[data-motion="off"] .scroll-layer>.letter-title,
+body[data-motion="off"] .scroll-layer .visual-bottom,
+body[data-motion="off"] .scroll-scene .hero-title-wrap,
+body[data-motion="off"] .scroll-scene .hero-art,
+body[data-motion="off"] .scroll-scene .hero-eyebrow,
+body[data-motion="off"] .scroll-scene .hero-index,
+body[data-motion="off"] .scroll-scene .glass-wave,
+body[data-motion="off"] .scroll-scene .asterisk,
+body[data-motion="off"] .scroll-scene #research-title,
+body[data-motion="off"] .scroll-scene .research-heading-mark,
+body[data-motion="off"] .scroll-layer .research-paths-art>svg,
+body[data-motion="off"] .scroll-layer .research-art-label,
+body[data-motion="off"] .scroll-layer .research-path-choice,
+body[data-motion="off"] .scroll-layer .research-letter-frame,
+body[data-motion="off"] .scroll-layer .research-envelope,
+body[data-motion="off"] .scroll-scene .studio-scribble,
+body[data-motion="off"] .scroll-scene .studio-weave,
+body[data-motion="off"] .scroll-scene .profile-star,
+body[data-motion="off"] .scroll-scene .contact-orbit,
+body[data-motion="off"] .scroll-scene .contact-heading h2>span,
+body[data-motion="off"] .scroll-scene .contact-period{translate:none!important;rotate:none!important;scale:none!important}
+body[data-motion="off"] .scroll-section-line,
+body[data-motion="off"] .scroll-card-meter,
+body[data-motion="off"] .scroll-entry-meter,
+body[data-motion="off"] .scroll-reel-edge{display:none}
+@media(max-width:650px){.reading-progress{height:2px}.scroll-card-meter,.scroll-entry-meter,.scroll-section-line{height:2px}}
+@media(prefers-reduced-motion:reduce){
+  .reading-progress,.scroll-section-line,.scroll-card-meter,.scroll-entry-meter,.scroll-reel-edge{display:none}
+  .scroll-layer,.scroll-layer>img,.scroll-layer>.visual-caption,.scroll-layer>.letter-title,.scroll-layer .visual-bottom,
+  .scroll-scene .hero-title-wrap,.scroll-scene .hero-art,.scroll-scene .hero-eyebrow,.scroll-scene .hero-index,.scroll-scene .glass-wave,.scroll-scene .asterisk,
+  .scroll-scene #research-title,.scroll-scene .research-heading-mark,.scroll-layer .research-paths-art>svg,.scroll-layer .research-art-label,.scroll-layer .research-path-choice,.scroll-layer .research-letter-frame,.scroll-layer .research-envelope,
+  .scroll-scene .studio-scribble,.scroll-scene .studio-weave,.scroll-scene .profile-star,.scroll-scene .contact-orbit,.scroll-scene .contact-heading h2>span,.scroll-scene .contact-period{translate:none!important;rotate:none!important;scale:none!important}
+}

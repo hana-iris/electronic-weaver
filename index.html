@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#00b8af">
+  <meta name="description" content="Electronic Weaver — independent games and research by Rongzhen Wan (Cliff). Narrative, play, and the worlds in between.">
+  <meta property="og:title" content="Electronic Weaver — Games, Stories & Research">
+  <meta property="og:description" content="Independent games, personal stories, and accepted conference contributions at CDiGRA2026 and ICIDS2026.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hana-iris.github.io/electronic-weaver/">
+  <link rel="canonical" href="https://hana-iris.github.io/electronic-weaver/">
+  <title>Electronic Weaver — Games, Stories & Research</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="media.css">
+  <link rel="stylesheet" href="motion.css">
+  <link rel="stylesheet" href="play-story.css">
+  <link rel="stylesheet" href="research.css">
+  <link rel="stylesheet" href="scroll.css">
+  <script src="content.js" defer></script>
+  <script src="app.js" defer></script>
+  <script src="media.js" defer></script>
+  <script src="motion.js" defer></script>
+  <script src="play-story.js" defer></script>
+  <script src="research.js" defer></script>
+  <script src="scroll.js" defer></script>
+</head>
+<body data-motion="on">
+  <a class="skip-link" href="#works">Skip to works</a>
+  <div class="cursor" aria-hidden="true"></div>
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <canvas id="wave-canvas" aria-hidden="true"></canvas>
+      <div class="dot-field" aria-hidden="true"></div>
+      <header class="masthead">
+        <a class="brand" href="#home" aria-label="Electronic Weaver home"><img class="brand-symbol" src="assets/studio-symbol.png" alt="" width="192" height="197"><span>ELECTRONIC<br>WEAVER</span></a>
+        <span class="masthead-note"><span class="status-dot"></span> INDEPENDENT GAME STUDIO</span>
+
+      </header>
+      <div class="hero-art" aria-hidden="true">
+        <svg class="liquid" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+          <defs><filter id="goo" x="-50%" y="-50%" width="200%" height="200%" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceGraphic" stdDeviation="13" result="blur"/><feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -9" result="goo"/><feComposite in="SourceGraphic" in2="goo" operator="atop"/></filter></defs>
+          <g filter="url(#goo)" fill="#10cec4" class="liquid-group">
+            <circle class="blob b1" cx="840" cy="220" r="114"/><circle class="blob b2" cx="944" cy="289" r="90"/><circle class="blob b3" cx="813" cy="408" r="94"/><circle class="blob b4" cx="1045" cy="505" r="57"/><circle class="blob b5" cx="665" cy="176" r="41"/><circle class="blob b6" cx="1090" cy="193" r="36"/>
+            <circle class="blob b7" cx="140" cy="627" r="91"/><circle class="blob b8" cx="76" cy="700" r="56"/><circle class="blob b9" cx="245" cy="654" r="40"/>
+          </g>
+        </svg>
+        <div class="glass-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <span class="art-coordinate">NARRATIVE × PLAY</span>
+      </div>
+      <div class="hero-title-wrap">
+        <p class="eyebrow hero-eyebrow">SMALL STUDIO. WORLDS OF POSSIBILITIES.</p>
+        <h1 id="hero-title" aria-label="Electronic Weaver"><span id="title-line-one" aria-hidden="true">ELECTRONIC</span><span id="title-line-two" aria-hidden="true">WEAVER.</span></h1>
+        <div class="hero-caption"><p>Weaving stories.<br>Making them playable.</p><a class="explore-link" href="#works">EXPLORE MY GAMES <span>↘</span></a></div>
+      </div>
+      <span class="hero-index">01 — WELCOME TO MY SPACE</span>
+    </section>
+
+    <section class="works section" id="works" aria-labelledby="works-title">
+      <div class="showreel-block" id="showreel">
+        <div class="showreel-heading reveal"><div><p class="eyebrow">ELECTRONIC WEAVER / STUDIO SHOWREEL</p><h2>WORLDS<br>IN <em>MOTION.</em></h2></div><p>A glimpse into the games,<br>stories, and moments I weave.<br><span>01:09 / SOUND ON WHEN YOU PLAY</span></p></div>
+        <div class="showreel-player reveal">
+          <video id="studio-showreel" controls playsinline preload="none" width="1920" height="1080" poster="assets/showreel-poster.jpg" aria-label="Electronic Weaver studio showreel"><source src="assets/showreel-web.mp4" type="video/mp4">Your browser does not support HTML video. <a href="assets/showreel-web.mp4">Download the showreel.</a></video>
+          <button class="showreel-play" aria-label="Play studio showreel"><span class="play-disc" aria-hidden="true">▶</span><span>PLAY SHOWREEL<small>STORIES, SYSTEMS & SMALL WORLDS</small></span></button>
+          <span class="reel-corner" aria-hidden="true">EW — IN MOTION</span>
+        </div>
+        <div class="showreel-caption"><span>BY RONGZHEN WAN / CLIFF</span></div>
+      </div>
+      <div class="section-top reveal"><p class="eyebrow">01 / SELECTED WORKS</p><span>THREE WORLDS. THREE WAYS TO PLAY.</span></div>
+      <div class="section-heading reveal"><h2 id="works-title">STORIES<br>YOU CAN <em>PLAY.</em></h2><p>A life between worlds.<br>A town caught in a loop.<br>A connection worth waiting for.</p><span class="asterisk" aria-hidden="true">✳</span></div>
+      <div class="project-grid">
+        <article class="project project-featured reveal">
+          <button class="project-visual visual-welbourne" data-project="welbourne" aria-label="Explore The Welbourne Files"><span class="project-number">01</span><span class="visual-caption">EVERYDAY LIFE.<br>OTHERWORLDLY MYSTERIES.</span><img src="assets/welbourne-hd.jpg" alt="The Welbourne Files game screen, with a character portrait and a mysterious office" loading="lazy" width="1216" height="832"><span class="open-project" aria-hidden="true">↗</span><span class="visual-bottom">THE WELBOURNE FILES / NARRATIVE SIMULATION</span></button>
+          <div class="project-info"><div><span class="project-category">LIFE SIMULATION · VISUAL NOVEL</span><h3>The Welbourne Files</h3></div><button class="text-button" data-project="welbourne">VIEW PROJECT ↗</button></div>
+          <p class="project-summary">An international student's everyday life takes a supernatural turn.</p>
+        </article>
+        <article class="project reveal">
+          <button class="project-visual visual-time" data-project="time" aria-label="Explore Still Have Time"><span class="project-number">02</span><span class="visual-caption">ONE TOWN.<br>ONE MORE CHANCE.</span><img src="assets/still-have-time-hd.jpg" alt="Still Have Time isometric town and character dialogue" loading="lazy" width="1920" height="1080"><span class="open-project" aria-hidden="true">↗</span><span class="visual-bottom">STILL HAVE TIME / NARRATIVE PUZZLE</span></button>
+          <div class="project-info"><div><span class="project-category">TIME LOOP · INVESTIGATION</span><h3>Still Have Time</h3></div><button class="text-button" data-project="time">VIEW PROJECT ↗</button></div>
+          <p class="project-summary">Learn from every loop. Find the truth before time begins again.</p>
+        </article>
+        <article class="project project-letter reveal">
+          <button class="project-visual visual-letter" data-project="letter" aria-label="Explore Far Letter"><span class="project-number">03</span><div class="letter-title">Some things<br>are worth<br><em>waiting for.</em></div><img src="assets/far-letter-hd.jpg" alt="Far Letter pixel art writing desk and letter interface" loading="lazy" width="1880" height="1032"><span class="open-project" aria-hidden="true">↗</span><span class="visual-bottom">FAR LETTER / EPISTOLARY NARRATIVE</span></button>
+          <div class="project-info"><div><span class="project-category">LETTERS · AI NARRATIVE</span><h3>Far Letter</h3></div><button class="text-button" data-project="letter">VIEW PROJECT ↗</button></div>
+          <p class="project-summary">A relationship that unfolds one letter at a time.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="research section" id="research" aria-labelledby="research-title">
+      <div class="section-top reveal"><p class="eyebrow">02 / RESEARCH &amp; NOTES</p><span>ANOTHER WAY TO EXPLORE PLAY.</span></div>
+      <div class="section-heading research-heading reveal"><h2 id="research-title">IDEAS<br>BEYOND <em>PLAY.</em></h2><p>Games to make.<br>Questions to explore.<br>Accepted work, awaiting publication.</p><span class="research-heading-mark" aria-hidden="true">↗</span></div>
+      <div class="research-grid">
+        <article class="research-card research-card-paths reveal">
+          <div class="research-art research-paths-art" aria-hidden="true">
+            <span class="research-art-index">NOTE / 01</span><span class="research-art-label">UNCHOSEN<br>PATHS</span>
+            <svg viewBox="0 0 600 240" preserveAspectRatio="xMidYMid slice"><g class="research-path-grid"><path d="M0 60H600M0 120H600M0 180H600M100 0V240M200 0V240M300 0V240M400 0V240M500 0V240"/></g><g class="research-path-lines"><path d="M48 200H170Q200 200 220 180L300 100Q320 80 350 80H565"/><path d="M170 200Q200 200 220 215H410"/><path d="M265 135Q284 115 310 135L352 173Q370 190 400 190H520"/><path d="M350 80Q375 80 394 58L420 28"/></g><g class="research-path-dots"><circle cx="48" cy="200" r="7"/><circle cx="565" cy="80" r="7"/><circle cx="410" cy="215" r="7"/><circle cx="520" cy="190" r="7"/><circle cx="420" cy="28" r="7"/></g><circle class="research-path-choice" cx="278" cy="122" r="14"/></svg>
+            <span class="research-art-footnote">GAMES × SOCIAL EXPERIENCE</span>
+          </div>
+          <div class="research-card-body">
+            <a class="research-conference-brand" href="https://chinesedigra.org/chinese-digra-2026/" target="_blank" rel="noopener noreferrer" aria-label="Chinese DiGRA 2026 conference — opens in a new tab"><img src="assets/cdigra-logo.png" alt="Chinese DiGRA" width="1200" height="177" loading="lazy"></a>
+            <div class="research-entry-meta"><span>CDiGRA 2026 / ABSTRACT</span><span class="research-status"><i aria-hidden="true"></i>ACCEPTED</span></div>
+            <h3>Unchosen Paths: &quot;Chinese-Style&quot; Indie Games as Counterfactual Spaces of Contemporary Chinese Social Experience</h3>
+            <p class="research-topic"><span>OVERVIEW</span> Looking across <i>Chinese Parents</i>, <i>Chinese Online Game</i> and <i>Matchmaking Inc.</i>, this research asks how familiar pressures become game rules and branching choices. It examines play as a way to try out different lives, revisit past decisions and reflect on the social forces shaping them.</p>
+            <div class="research-card-bottom"><p>Awaiting publication</p><button type="button" class="research-entry-button" data-research="unchosen-paths" aria-label="View entry details for Unchosen Paths">ENTRY DETAILS <span aria-hidden="true">↗</span></button></div>
+          </div>
+        </article>
+        <article class="research-card research-card-letter reveal">
+          <div class="research-art research-letter-art" aria-hidden="true">
+            <span class="research-art-index">NOTE / 02</span><div class="research-letter-frame"><img src="assets/far-letter-hd.jpg" alt="" loading="lazy" width="1880" height="1032"></div>
+            <svg class="research-envelope" viewBox="0 0 180 120"><path d="M10 10H170V110H10Z"/><path d="M10 10L90 69L170 10M10 110L66 60M170 110L114 60"/><circle cx="90" cy="67" r="13"/></svg>
+            <span class="research-art-footnote">LETTERS × NARRATIVE</span>
+          </div>
+          <div class="research-card-body">
+            <a class="research-conference-brand research-conference-icids" href="https://icids2026.ardin.online/" target="_blank" rel="noopener noreferrer" aria-label="ICIDS 2026 conference — opens in a new tab"><img src="assets/icids-2026-logo.png" alt="ICIDS 2026" width="838" height="485" loading="lazy"></a>
+            <div class="research-entry-meta"><span>ICIDS 2026 / LATE BREAKING WORK</span><span class="research-status"><i aria-hidden="true"></i>ACCEPTED</span></div>
+            <h3>Far Letter: an AI-Driven Asynchronous Epistolary Narrative Game</h3>
+            <p class="research-topic"><span>OVERVIEW</span> Far Letter explores a quieter way to interact with an AI character: write a letter, step away, and return for a reply. The prototype makes distance and anticipation part of its rhythm. A planned player study will look at writing, story pacing and emotional connection.</p>
+            <div class="research-card-bottom"><p>Awaiting publication</p><button type="button" class="research-entry-button" data-research="far-letter" aria-label="View entry details for Far Letter research">ENTRY DETAILS <span aria-hidden="true">↗</span></button></div>
+          </div>
+        </article>
+      </div>
+      <p class="research-publication-note reveal">Both contributions have been accepted. Full texts are not publicly available yet.</p>
+    </section>
+
+    <section class="studio section" id="studio" aria-labelledby="studio-title">
+      <div class="section-top reveal"><p class="eyebrow">03 / THE PERSON BEHIND THE WORLDS</p><span>SOLO, BUT NEVER SHORT OF IDEAS.</span></div>
+      <div class="studio-layout">
+        <div class="studio-heading reveal"><h2 id="studio-title" aria-label="One weaver. Many worlds."><span class="studio-title-line" aria-hidden="true"><span class="studio-title-size">ONE</span><span class="studio-title-copy">ONE</span></span><span class="studio-title-line" aria-hidden="true"><span class="studio-title-size">WEAVER.</span><span class="studio-title-copy">WEAVER.</span></span><em aria-hidden="true"><span class="studio-title-line"><span class="studio-title-size">MANY</span><span class="studio-title-copy">MANY</span></span><span class="studio-title-line"><span class="studio-title-size">WORLDS.</span><span class="studio-title-copy">WORLDS.</span></span></em></h2><span class="studio-scribble" aria-hidden="true">↗</span><div class="studio-logo-display"><img src="assets/studio-logo.png" alt="Electronic Weaver 电子织机 studio logo, a turquoise typewriter" width="1522" height="1922" loading="lazy"><p>THE STUDIO<br>BEHIND THE STORIES.<span>ELECTRONIC WEAVER<br>电子织机</span></p></div></div>
+        <div class="studio-copy reveal"><div class="profile"><img src="assets/cliff.png" alt="Cliff's pink-haired character avatar" width="336" height="336" loading="lazy"><div><p class="eyebrow">HELLO, I'M</p><h3>Rongzhen Wan<span>Cliff ( ? )</span></h3></div><span class="profile-star" aria-hidden="true">✳</span></div>
+          <p class="about-lead">I make games that bring<br>stories and play together.</p>
+          <p>Electronic Weaver is a solo independent game studio run by Rongzhen Wan (Cliff). I create independent games with a strong focus on narrative and gameplay.</p>
+          <p>My work centres on narrative design and experience-driven gameplay design. I primarily develop with Unity and Godot — exploring how a world feels, how a story unfolds, and what a player leaves behind.</p>
+          <div class="skill-list"><span>Narrative Design</span><span>Gameplay Design</span><span>Unity</span><span>Godot</span></div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact" aria-labelledby="contact-title">
+      <div class="section-top reveal"><p class="eyebrow">04 / LET'S CONNECT</p><span>THE NEXT STORY STARTS WITH A HELLO.</span></div>
+      <div class="contact-heading reveal"><h2 id="contact-title">LET'S MAKE<br><span>SOMETHING</span><br>MEANINGFUL<span class="contact-period">.</span></h2><span class="contact-orbit" aria-hidden="true">↗</span></div>
+      <div class="contact-bottom reveal"><p>For conversations, collaborations,<br>or just a little curiosity.</p><div class="social-links" id="social-links"></div></div>
+      <footer><a class="brand footer-brand" href="#home"><img class="brand-symbol" src="assets/studio-symbol.png" alt="" width="192" height="197"><span>ELECTRONIC<br>WEAVER</span></a><span>INDEPENDENT GAMES. PERSONAL STORIES.</span><a class="back-top" href="#home">BACK TO TOP ↑</a></footer>
+    </section>
+  </main>
+  <nav class="glass-nav" aria-label="Main navigation"><a class="dock-logo" href="#home" aria-label="Home"><img src="assets/studio-symbol.png" alt="" width="192" height="197"></a><span class="dock-divider"></span><a href="#studio" data-section="studio"><span>Studio</span><small>工作室</small></a><a href="#works" data-section="works"><span>Works</span><small>作品</small></a><a href="#research" data-section="research"><span>Research</span><small>学术</small></a><a href="#contact" data-section="contact"><span>Contact</span><small>联系</small></a><span class="dock-divider"></span><button class="motion-toggle" aria-label="Pause animations" aria-pressed="false"><span class="motion-icon">Ⅱ</span><span class="motion-text">MOTION ON</span></button></nav>
+  <dialog class="project-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="Close project">CLOSE ×</button><div class="dialog-content"><p class="eyebrow" id="dialog-category"></p><h2 id="dialog-title"></h2><img id="dialog-image" src="assets/welbourne-hd.jpg" alt=""><div class="dialog-description" id="dialog-description"></div><p class="dialog-credit" id="dialog-credit"></p><div class="dialog-bottom"><span id="dialog-index"></span><button class="next-project">NEXT PROJECT →</button></div></div></dialog>
+  <dialog class="research-dialog" aria-labelledby="research-dialog-title" aria-describedby="research-dialog-note">
+    <button type="button" class="research-dialog-close" aria-label="Close research entry">CLOSE ×</button>
+    <div class="research-dialog-content">
+      <a class="research-conference-brand" id="research-dialog-conference-link" target="_blank" rel="noopener noreferrer"><img id="research-dialog-logo" alt="" width="1200" height="177"></a>
+      <p class="eyebrow" id="research-dialog-category"></p>
+      <p class="research-dialog-status"><span class="research-status"><i aria-hidden="true"></i>ACCEPTED</span><span>AWAITING PUBLICATION</span></p>
+      <h2 id="research-dialog-title"></h2>
+      <dl class="research-details"><div><dt>CONFERENCE</dt><dd id="research-dialog-conference"></dd></div><div><dt>CONTRIBUTION</dt><dd id="research-dialog-format"></dd></div><div><dt>STATUS</dt><dd>Accepted</dd></div><div><dt>PUBLICATION</dt><dd>Awaiting publication</dd></div></dl>
+      <p class="research-dialog-topic"><span>FOCUS</span><span id="research-dialog-topic"></span></p>
+      <p class="research-dialog-summary" id="research-dialog-summary"></p>
+      <div class="research-dialog-note" id="research-dialog-note"><span aria-hidden="true">↗</span><p>This contribution has been accepted and is awaiting publication. The full text is not publicly available yet.</p></div>
+      <div class="research-dialog-bottom"><span id="research-dialog-index"></span><div><button type="button" class="research-previous" aria-label="Previous research entry">← PREVIOUS</button><button type="button" class="research-next" aria-label="Next research entry">NEXT ENTRY →</button></div></div>
+    </div>
+  </dialog>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
+

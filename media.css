@@ -8,3 +8,7 @@ body[data-motion="off"] .showreel-play:hover .play-disc{transform:none}
 .showreel-player video{position:absolute;inset:0}
 
 .showreel-caption{justify-content:flex-end}
+
+/* Section labels after portfolio copy review. */
+#works-title,#research-title{font-size:clamp(42px,6.8vw,104px);max-width:100%}#studio-title{font-size:clamp(38px,5.3vw,82px);overflow-wrap:normal}#contact-title{font-size:clamp(46px,8vw,124px)}.hero-caption{justify-content:flex-end}.contact-bottom .social-links{width:100%}
+@media(max-width:650px){#works-title,#research-title{font-size:12vw}#studio-title{font-size:12vw}#contact-title{font-size:12vw}}

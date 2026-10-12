@@ -53,10 +53,7 @@
   const titleCycles = [
     createTitleCycle(document.getElementById('hero-title'),
       [document.getElementById('title-line-one'), document.getElementById('title-line-two')],
-      [['ELECTRONIC', 'WEAVER.'], ['STORIES', 'IN PLAY.']]),
-    createTitleCycle(document.getElementById('studio-title'),
-      [...document.querySelectorAll('#studio-title .studio-title-copy')],
-      [['ONE', 'WEAVER.', 'MANY', 'WORLDS.']])
+      [['ELECTRONIC', 'WEAVER.'], ['STORIES', 'IN PLAY.']])
   ];
   function updateMotion() {
     document.body.dataset.motion = motion ? 'on' : 'off';
